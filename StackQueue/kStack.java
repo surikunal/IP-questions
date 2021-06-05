@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.Arrays;
 public class kStack {
     static int[] arr;
@@ -6,8 +5,6 @@ public class kStack {
     static int[] top;
     static int n, k, free;
     public kStack(int n, int k) {
-        n = n;
-        k = k;
         arr = new int[n];
         next = new int[n];
         top = new int[k];
@@ -60,7 +57,7 @@ public class kStack {
         ks.push(20, 0);
         ks.push(30, 1);
         ks.push(40, 1);
-        check = ks.isEmpty(1);
+        check = ks.isEmpty(2);
         System.out.println(check);
         ks.push(50, 2);
         check = ks.isFull(1);
@@ -69,7 +66,7 @@ public class kStack {
         ks.push(70, 1);
         ele = ks.pop(2);
         System.out.println(ele);
-        ele = ks.pop(1);`
+        ele = ks.pop(1);
         System.out.println(ele);
         ele = ks.pop(0);
         System.out.println(ele);

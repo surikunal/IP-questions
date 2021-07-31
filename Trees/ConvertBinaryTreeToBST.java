@@ -126,8 +126,8 @@ class ConvertBinaryTreeToBST {
     }
 
     public static Node bt_to_bst(Node root) {
-        Node head = bt_to_dll(root);
-        head = sort_dll(head);
-        return dll_to_bst(head);
+        Node head = bt_to_dll(root); // T: O(N), S: O(logN)
+        head = sort_dll(head); // T: O(NlogN), S: O(logN)
+        return dll_to_bst(head); // T: O(NlogN), S: O(logN)
     }
 }
